@@ -17,8 +17,6 @@ export class HomeComponent implements OnInit {
   estimatedArea:string = "";
   showEstimatedArea:boolean = false;
 
-  name = 'Angular';
-
   public lat:number = 0;
   public lng:number = 0;
 
