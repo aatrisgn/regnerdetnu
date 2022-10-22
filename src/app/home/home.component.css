@@ -1,7 +1,9 @@
-#Raining_answer_text{
-    color:red;
-}
+
 .container{
     height: 100vh;
     padding-top: 20vh;
+}
+
+#estimatedAreaText{
+    color: grey;
 }

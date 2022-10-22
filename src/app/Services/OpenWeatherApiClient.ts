@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { WheatherResponseDTO } from '../Models/WeatherResponseDTO';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class OpenWeatherApiClient {
@@ -10,20 +11,13 @@ export class OpenWeatherApiClient {
         this._httpClient = httpClient;
     }
 
-    public GetWeatherByCoordinates(lattitude:number, longitude:number) : WheatherResponseDTO {
-        let weatherResponse:WheatherResponseDTO;
+    public GetWeatherByCoordinates(lattitude:number, longitude:number) : Observable<WheatherResponseDTO> {
         let queryString:string;
 
         queryString = `https://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&appid=de7f7fe57c69dced8f28fa28a3b2a4e2&units=metric`
 
         //let some = this._httpClient.jsonp(queryString, 'callback').subscribe((data:WheatherResponseDTO) => weatherResponse = data);
 
-        let some = this._httpClient.jsonp(queryString, 'callback').pipe();
-
-        console.log(some);
-
-        weatherResponse = new WheatherResponseDTO();
-
-        return weatherResponse;
+        return this._httpClient.get<WheatherResponseDTO>(queryString)
     }
 }

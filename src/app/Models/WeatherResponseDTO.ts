@@ -1,6 +1,8 @@
+import { Weather } from '../Models/Weather';
+
 export class WheatherResponseDTO {
     public Coord:any;
-    public Weather:any;
+    public weather:Weather[] = new Array<Weather>();
     public base:any;
     
     public main:any;
@@ -12,7 +14,7 @@ export class WheatherResponseDTO {
     public sys:any;
     public timezone:any;
     public id:any;
-    public name:any;
+    public name:string = "";
     public cod:any;
 
     constructor() {
