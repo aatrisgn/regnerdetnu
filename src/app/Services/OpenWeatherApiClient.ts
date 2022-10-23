@@ -16,8 +16,6 @@ export class OpenWeatherApiClient {
 
         queryString = `https://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&appid=de7f7fe57c69dced8f28fa28a3b2a4e2&units=metric`
 
-        //let some = this._httpClient.jsonp(queryString, 'callback').subscribe((data:WheatherResponseDTO) => weatherResponse = data);
-
         return this._httpClient.get<WheatherResponseDTO>(queryString)
     }
 }

@@ -9,6 +9,13 @@ body{
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
+nav{
+    background-color: #9dc9cb;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
 .footer-container{
     background-color: rgb(29, 29, 29);
     color:whitesmoke;
@@ -21,6 +28,9 @@ nav{
     background-color: white;
 }
 
-footer{
-    
+.content-container{
+    background-color: white;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 }
