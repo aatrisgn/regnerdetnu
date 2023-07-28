@@ -10,6 +10,8 @@ import { CareersComponent } from './careers/careers.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    MatToolbarModule,
+    MatIconModule,
     HttpClientModule
   ],
   providers: [],

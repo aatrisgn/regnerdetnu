@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RegnerDet.nu';
+  isNavbarCollapsed = true;
+
+  collapseMenu():void{
+    this.isNavbarCollapsed = true;
+  }
 }

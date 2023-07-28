@@ -1,3 +1,30 @@
+.container-fluid, nav{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+}
 
+nav {
+    padding: 1vh;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
 
+.footer-container{
+    background-color: rgb(29, 29, 29);
+    color:whitesmoke;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    height: 5vh;
+}
 
+nav{
+    background-color: rgb(180, 204, 252);
+}
+
+.content-wrapper{
+    min-height: 90vh;
+}
