@@ -1,7 +1,17 @@
 
 .container{
     height: 90vh;
-    padding-top: 20vh;
+    padding-top: 5vh;
+}
+
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.image-wrapper img{
+    width: 100%;
 }
 
 #estimatedAreaText{

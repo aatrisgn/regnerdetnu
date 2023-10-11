@@ -21,9 +21,35 @@ nav {
 }
 
 nav{
-    background-color: rgb(180, 204, 252);
+    background-color: rgb(54, 132, 177);
 }
+
+nav div ul li a, nav a {
+    color:white;
+}
+
+@media only screen and (min-width: 1600px) {
+    .background-image{
+        background: rgba(233, 233, 233, 0.6) url(../assets/regnerdetnu-logo.png) center no-repeat ;
+        -o-background-size:60% auto;
+        -webkit-background-size:60% auto;
+        -moz-background-size:60% auto;
+        background-size:60% auto;
+    }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1100px) {
+    .background-image{
+        background: rgba(233, 233, 233, 0.6) url(../assets/regnerdetnu-logo.png) center no-repeat ;
+        -o-background-size:80% auto;
+        -webkit-background-size:80% auto;
+        -moz-background-size:80% auto;
+        background-size:80% auto;
+    }
+}
+
 
 .content-wrapper{
     min-height: 90vh;
+    opacity: 1;
 }
